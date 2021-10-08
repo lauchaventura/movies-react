@@ -7,22 +7,24 @@ import {
 import styles from "./App.module.css"
 import { MovieDetails } from "./pages/MoviesDetails";
 import { LandingPage } from "./pages/LandingPage";
-export function App(){
+export function App() {
     return (
-    <Router>
-        <header>
-            <Link to="/">
-            <h1 className={styles.title}>Movies</h1>
-            </Link>
-        </header>
-        <main>
-         <Switch>
-             <Route exact path="/movies/:movieId"><MovieDetails/></Route>
-             <Route path="/">
-                 <LandingPage />
-            </Route>
-         </Switch>
-        </main>
-    </Router>
+        <Router>
+            <header>
+                <Link to="/">
+                    <div>
+                        <h1 className={styles.title}>Movies</h1>
+                    </div>
+                </Link>
+            </header>
+            <main>
+                <Switch>
+                    <Route exact path="/movies/:movieId"><MovieDetails /></Route>
+                    <Route path="/">
+                        <LandingPage />
+                    </Route>
+                </Switch>
+            </main>
+        </Router>
     )
 }

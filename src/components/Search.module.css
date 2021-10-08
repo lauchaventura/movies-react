@@ -22,6 +22,6 @@
 .searchInput:focus,
 .searchButton:focus {
   outline: none;
-  border: 1px solid #f88ec2;
-  box-shadow: 0 0 5px #ebbed4;
+  border: 1px solid #d81010;
+  box-shadow: 0 0 5px #ce0000;
 }
